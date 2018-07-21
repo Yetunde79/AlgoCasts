@@ -21,7 +21,7 @@
 //     //     reversed = str[i] + reversed;
 //     // }
 
-//     for(let character of str){    //for loop, es6
+//     for(let character of str){    //for loop, in es6
 //         reversed = character + reversed;
 //     }
 //     return reversed;
