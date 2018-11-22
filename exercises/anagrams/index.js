@@ -43,7 +43,7 @@ function anagrams(stringA, stringB) {
 
 function buildCharMap(str) {
   return str
-    .replace(/[^\w]/g, "") //removing all spaces and punctuation marks
+    .replace(/[\W]/g, "") //removing all spaces and punctuation marks, any character thats not a letter or num
     .toLowerCase()
     .split("")
     .sort()
