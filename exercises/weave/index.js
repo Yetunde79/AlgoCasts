@@ -22,8 +22,22 @@
 //    q.remove() // 2
 //    q.remove() // 'There'
 
-const Queue = require('./queue');
+const Queue = require("./queue");
 
-function weave(sourceOne, sourceTwo) {}
+function weave(sourceOne, sourceTwo) {
+  q = new Queue();
+
+  //does 1st if loop then second, then continues till while condition met
+  while (sourceOne.peek() || sourceTwo.peek()) {
+    //if there is nothing in it, it reuturn undef. as long as one of them have something in it, do :
+    if (sourceOne.peek()) {
+      q.add(sourceOne.remove()); //after adding to new array, remove from old
+    }
+    if (sourceTwo.peek()) {
+      q.add(sourceTwo.remove());
+    }
+  }
+  return q;
+}
 
 module.exports = weave;

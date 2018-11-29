@@ -6,7 +6,7 @@
 
 class Queue {
   constructor() {
-    this.data = [];
+    this.data = []; //to access what's in the constructor you have to use this
   }
 
   add(record) {
@@ -15,6 +15,10 @@ class Queue {
 
   remove() {
     return this.data.pop();
+  }
+
+  peek() {
+    return this.data[this.data.length - 1];
   }
 }
 
