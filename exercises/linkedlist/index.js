@@ -99,11 +99,13 @@ class LinkedList {
   insertLast(data) {
     const last_node = this.getLast();
 
-    if (!head) {
-      this.head = data;
+    if (last_node) {
+      //there is a last node, not empty
+      last_node.next = new Node(data); //new node() creates a new node
+    } else {
+      //chain empty
+      this.head = new Node(data);
     }
-
-    last_node.next = data;
   }
 }
 

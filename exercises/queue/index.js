@@ -13,6 +13,8 @@
 //unshift() adds to front of array
 //pop() removes from array
 
+"use strict";
+
 class Queue {
   //ES6 class
   constructor() {
@@ -28,6 +30,18 @@ class Queue {
 
   remove() {
     return this.data.pop(); //return so you can work with what you just removed
+  }
+
+  peek() {
+    return this.data[this.data.length - 1];
+  }
+
+  getLength() {
+    return this.data.length;
+  }
+
+  isEmpty() {
+    return this.data.length === 0;
   }
 }
 

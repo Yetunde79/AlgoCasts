@@ -8,6 +8,11 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
+//queue follows fifo
+//array is a bigger version of queue
+//unshift() adds to front of array
+//pop() removes from array
+
 class Queue {
   constructor() {
     this.data = [];
