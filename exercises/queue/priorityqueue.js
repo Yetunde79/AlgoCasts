@@ -44,4 +44,8 @@ q.add("actually i forgot something", true); //goes to top of que since its highp
 
 console.log(q.peek());
 
+q.remove();
+
+console.log(q.peek());
+
 module.exports = PriorityQueue;
